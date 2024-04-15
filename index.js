@@ -4,7 +4,7 @@ const app = express()
 const server = http.createServer(app)
 const io = require("socket.io")(server, {
 	cors: {
-		origin: "https://vid-chat-r2-client.vercel.app",
+		origin: "*",
 		methods: [ "GET", "POST" ]
 	}
 })
